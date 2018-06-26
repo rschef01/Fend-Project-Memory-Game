@@ -4,6 +4,7 @@ let objects = ['bicycle', 'bicycle', 'leaf', 'leaf', 'cube', 'cube', 'anchor', '
     // Useful selectors shortened
     $rating = $('.fa-star'),
     $moves = $('.moves'),
+    $timer = $('.timer'),
     $restart = $('.restart'),
     $deck = $('.deck'),
 
@@ -78,7 +79,7 @@ function rating(moves) {
 
 // Add alert window modal to display the number of moves and star score rating.
 function gameOver(moves, score) {
-    $('#winnerMessage').text(`You completed the game in a total of ${moves} moves with a score of ${score}. Well done!`);
+    $('#winnerMessage').text(`You completed the game in a total of ${moves} moves and ${second} seconds with a score of ${score}. Well done!`);
     $('#winnerModal').modal('toggle');
 }
 
@@ -140,10 +141,26 @@ let addCardListener = function () {
             let score = rating(moves).score;
             setTimeout(function () {
                 gameOver(moves, score);
-            });
+            }, 500);
         }
     });
 }
+
+// Initiates the timer when game is loaded
+function initTime() {
+    nowTime = setInterval(function () {
+        $timer.text(`${second}`)
+        second = second + 1
+    }, 1000);
+}
+
+// Resets the timer is game is over or restarted
+function resetTimer(timer) {
+    if (timer) {
+        clearInterval(timer);
+    }
+}
+
 
 
 init();
