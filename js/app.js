@@ -9,7 +9,7 @@ let objects = ['bicycle', 'bicycle', 'leaf', 'leaf', 'cube', 'cube', 'anchor', '
     $deck = $('.deck'),
 
     // Set variables to shorten code
-    nowTime,
+    time,
     cardsOpen = [],
     match = 0,
     second = 0,
@@ -57,7 +57,7 @@ function init() {
     addCardListener();
 
     // resets the timer to 0 if the game is restarted
-    resetTimer(nowTime);
+    resetTimer(time);
     second = 0;
     $timer.text(`${second}`)
     initTime();
