@@ -17,7 +17,7 @@
 
 ## Known Issues:
 
-* If you restart the game, the timer appears to run at a double-time rate.  
+No known issues
 
 ## Contributing
 
