@@ -1,24 +1,31 @@
 # Memory Game Project
 
+Memory Game project for Udacity's FEND program. Skills utilized: HTML, CSS, Javascript.
+
 ## Table of Contents
 
-* [Instructions](#instructions)
-* [Known Issues](#knownIssues)
-* [Contributing](#contributing)
+* [Getting Started](#gettingStarted)
+* [Game Instructions](#gameInstructions)
+* [Built With](#builtWith)
 
-## Instructions
+## Getting Started
 
-1. Clone the Elle's Memory Game Repo:
-  * git clone https://github.com/rschef01/Fend-Project-Memory-Game.git
+Download the project and open index.html to start playing.
+  * https://github.com/rschef01/Fend-Project-Memory-Game.git
 
-2. Load index.html in browser.
+## Game Instructions
 
-3. Enjoy the game!
+1. Click on a card
+2. Keep revealing cards and working your memory to remember each unveiled card.
+3. Match cards properly with less moves and in faster time
 
-## Known Issues:
+## Built With:
 
-No known issues
-
-## Contributing
-
-This repository is open for contribution from Udacity employees and mentors.
+* HTML5
+* CSS
+* JavaScript
+* FontAwesome
+* Google Fonts
+* Icons from Flaticon
+* Bootstrap v3.3.7
+* jQuery v2.2.1
